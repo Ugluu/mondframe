@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mondframe — Drone, Photography & Virtual Staging for London Estate Agents</title>
+    <meta name="description" content="Stop juggling photographers, drone pilots, and staging tools. One booking. 24 hours later, ready to list.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="logo">Mondframe</a>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <a href="#contact" class="btn btn-accent">Get a quote</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="eyebrow">London · CAA-licensed · 24-hour delivery</p>
+            <h1>Stop juggling photographers, drone pilots, and staging tools.</h1>
+            <p class="hero-sub">Drone footage, professional photography, and AI virtual staging — all from a single team in London.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-accent">Get a free quote</a>
+                <a href="#work" class="btn btn-outline-light">See our work →</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="trust-badges">
+        <div class="container">
+            <ul>
+                <li>✓ CAA-licensed drone operator</li>
+                <li>✓ 24-hour turnaround guaranteed</li>
+                <li>✓ DBS-checked team</li>
+                <li>✓ £5M public liability insurance</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="pain-point">
+    <div class="container">
+        <h2 class="section-title">The old way vs The Mondframe way</h2>
+        
+        <div class="comparison">
+            <div class="card card-light">
+                <p class="card-eyebrow card-eyebrow-bad">✗ The old way</p>
+                <h3>Coordinating 3 vendors. Wasting hours.</h3>
+                <ul class="card-list">
+                    <li>Hire a photographer. Wait 2 days.</li>
+                    <li>Schedule a drone pilot. Different date.</li>
+                    <li>Find an EPC assessor. Another visit.</li>
+                    <li>Beg the vendor to clear furniture.</li>
+                </ul>
+                <p class="card-result"><em>Result: Late listings, wrong photos, lost viewings.</em></p>
+            </div>
+            
+            <div class="card card-dark">
+                <p class="card-eyebrow card-eyebrow-good">✓ The Mondframe way</p>
+                <h3>One booking. 24 hours later, ready to list.</h3>
+                <ul class="card-list">
+                    <li>Cinematic drone footage</li>
+                    <li>HDR property photography</li>
+                    <li>AI virtual staging</li>
+                    <li>Floor plans + direct upload links</li>
+                </ul>
+                <p class="card-result"><em>Result: Faster sales. Stronger viewings. Happy clients.</em></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services" id="services">
+    <div class="container">
+        <h2 class="section-title">Three services. One team.</h2>
+        
+        <div class="service-grid">
+            <div class="service-card">
+                <img src="images/drone.svg" alt="Drone icon" class="service-icon">
+                <h3>Aerial Videography</h3>
+                <p class="service-desc">Cinematic drone footage that elevates every listing from Mews flats to country estates.</p>
+                <ul class="service-features">
+                    <li>✓ 4K + slow motion</li>
+                    <li>✓ Reels for Instagram</li>
+                    <li>✓ Full property tour edit</li>
+                </ul>
+            </div>
+            
+            <div class="service-card service-card-featured">
+                <img src="images/virtual-staging.svg" alt="Virtual staging icon" class="service-icon">
+                <h3>AI Virtual Staging</h3>
+                <p class="service-desc">Furnished property? Tenant in residence? We digitally remove clutter or restage rooms.</p>
+                <ul class="service-features">
+                    <li>✓ Empty → Furnished</li>
+                    <li>✓ Furnished → Decluttered</li>
+                    <li>✓ 24-hour delivery</li>
+                </ul>
+            </div>
+            
+            <div class="service-card">
+                <img src="images/photo.svg" alt="Camera icon" class="service-icon">
+                <h3>Property Photography</h3>
+                <p class="service-desc">Professional interior and exterior shots optimized for Rightmove, Zoopla, and beyond.</p>
+                <ul class="service-features">
+                    <li>✓ HDR processing</li>
+                    <li>✓ 3D view tour edit</li>
+                    <li>✓ Floorplan add-on</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="work" id="work">
+    <div class="container">
+        <h2 class="section-title">See the difference</h2>
+        <p class="section-sub">Drag the slider to compare before and after virtual staging.</p>
+        
+        <div class="ba-slider">
+            <img src="images/after.jpg" alt="After virtual staging" class="ba-img-after">
+            <div class="ba-before-clip">
+                <img src="images/before.jpg" alt="Before virtual staging" class="ba-img-before">
+            </div>
+            <div class="ba-handle">
+                <div class="ba-line"></div>
+                <div class="ba-circle">
+                    <span>‹</span>
+                    <span>›</span>
+                </div>
+            </div>
+            <span class="ba-label ba-label-before">Before</span>
+            <span class="ba-label ba-label-after">After</span>
+        </div>
+    </div>
+</section>
+<script>
+    const baSlider = document.querySelector('.ba-slider');
+    const baClip = document.querySelector('.ba-before-clip');
+    const baHandle = document.querySelector('.ba-handle');
+    let baDragging = false;
+
+    function setBaPosition(x) {
+        const rect = baSlider.getBoundingClientRect();
+        let pct = ((x - rect.left) / rect.width) * 100;
+        pct = Math.max(0, Math.min(100, pct));
+        baClip.style.width = pct + '%';
+        baHandle.style.left = pct + '%';
+        baClip.querySelector('.ba-img-before').style.width = rect.width + 'px';
+    }
+
+    baSlider.addEventListener('mousedown', (e) => { baDragging = true; setBaPosition(e.clientX); });
+    window.addEventListener('mousemove', (e) => { if (baDragging) setBaPosition(e.clientX); });
+    window.addEventListener('mouseup', () => { baDragging = false; });
+
+    baSlider.addEventListener('touchstart', (e) => { baDragging = true; setBaPosition(e.touches[0].clientX); });
+    window.addEventListener('touchmove', (e) => { if (baDragging) setBaPosition(e.touches[0].clientX); });
+    window.addEventListener('touchend', () => { baDragging = false; });
+
+    window.addEventListener('resize', () => {
+        const rect = baSlider.getBoundingClientRect();
+        baClip.querySelector('.ba-img-before').style.width = rect.width + 'px';
+    });
+    
+    window.addEventListener('load', () => {
+        const rect = baSlider.getBoundingClientRect();
+        baClip.querySelector('.ba-img-before').style.width = rect.width + 'px';
+    });
+</script>
+
+<section class="pricing" id="pricing">
+    <div class="container">
+        <h2 class="section-title">Transparent pricing. No surprises.</h2>
+        <p class="section-sub">One booking. Three options. All-inclusive.</p>
+        
+        <div class="pricing-grid">
+            <div class="price-card">
+                <p class="price-tier">Essential</p>
+                <p class="price-amount">£299</p>
+                <p class="price-unit">per property</p>
+                <ul class="price-features">
+                    <li>20 photos</li>
+                    <li>Floorplan included</li>
+                    <li class="muted">Drone footage</li>
+                    <li class="muted">Virtual staging</li>
+                </ul>
+                <a href="#contact" class="btn btn-outline">Book Essential</a>
+            </div>
+            
+            <div class="price-card price-card-featured">
+                <span class="price-badge">Most Popular</span>
+                <p class="price-tier">Signature</p>
+                <p class="price-amount">£499</p>
+                <p class="price-unit">per property</p>
+                <ul class="price-features">
+                    <li>30 photos</li>
+                    <li>Floorplan</li>
+                    <li>Drone reel</li>
+                    <li>5 staging</li>
+                    <li>3D view tour</li>
+                </ul>
+                <a href="#contact" class="btn btn-accent">Book Signature</a>
+            </div>
+            
+            <div class="price-card">
+                <p class="price-tier">Premium</p>
+                <p class="price-amount">£799</p>
+                <p class="price-unit">per property</p>
+                <ul class="price-features">
+                    <li>40 photos</li>
+                    <li>Floorplan</li>
+                    <li>Full film</li>
+                    <li>15 staging</li>
+                    <li>3D view tour</li>
+                </ul>
+                <a href="#contact" class="btn btn-outline">Book Premium</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="process">
+    <div class="container">
+        <h2 class="section-title">How it works</h2>
+        <p class="section-sub">From booking to listing-ready — in 4 simple steps.</p>
+        
+        <div class="process-grid">
+            <div class="process-step">
+                <div class="process-number">1</div>
+                <h3>Book online</h3>
+                <p>2-minute form</p>
+                <p>Pick package + date</p>
+            </div>
+            
+            <div class="process-step">
+                <div class="process-number">2</div>
+                <h3>We shoot</h3>
+                <p>Same week visit</p>
+                <p>90 minutes on-site</p>
+            </div>
+            
+            <div class="process-step">
+                <div class="process-number">3</div>
+                <h3>We edit</h3>
+                <p>AI staging + edits</p>
+                <p>Overnight</p>
+            </div>
+            
+            <div class="process-step">
+                <div class="process-number">4</div>
+                <h3>You list</h3>
+                <p>Direct upload links</p>
+                <p>Rightmove, Zoopla</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="faq" id="faq">
+    <div class="container">
+        <h2 class="section-title">Frequently asked questions</h2>
+        <p class="section-sub">Everything you need to know before booking.</p>
+        
+        <div class="faq-layout">
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary>Are you CAA-licensed?</summary>
+                    <p>Yes — Class A2 + GVC certified. All flights are pre-notified and fully insured.</p>
+                </details>
+                
+                <details class="faq-item">
+                    <summary>What about insurance?</summary>
+                    <p>£5M public liability insurance included on every shoot.</p>
+                </details>
+                
+                <details class="faq-item">
+                    <summary>Can you handle furnished properties?</summary>
+                    <p>That's our specialty — AI virtual staging makes furnished or occupied homes look picture-perfect.</p>
+                </details>
+                
+                <details class="faq-item">
+                    <summary>What's your turnaround?</summary>
+                    <p>Most edits delivered within 24 hours of the shoot.</p>
+                </details>
+                
+                <details class="faq-item">
+                    <summary>Do you serve outside London?</summary>
+                    <p>Yes — within 30 miles of central London. Expanding across South East in 2026.</p>
+                </details>
+                
+                <details class="faq-item">
+                    <summary>What about EPC/Floorplan?</summary>
+                    <p>Floorplan included in all packages. EPC add-on £80.</p>
+                </details>
+            </div>
+            
+            <div class="faq-cta">
+                <h3>Ready to win more instructions?</h3>
+                <p>Book a free 15-minute consultation today.</p>
+                <a href="#contact" class="btn btn-accent">Book a call →</a>
+                <p class="faq-cta-divider">or call us:</p>
+                <p class="faq-cta-phone">07788 189957</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <p class="footer-logo">Mondframe</p>
+                <p>Drone, photo, virtual staging.</p>
+                <p>London + 30 mile radius.</p>
+            </div>
+            
+            <div class="footer-col">
+                <p class="footer-title">Quick Links</p>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <p class="footer-title">Contact</p>
+                <ul>
+                    <li><a href="mailto:hello@mondframe.co.uk">hello@mondframe.co.uk</a></li>
+                    <li>07788 189957</li>
+                    <li>London + 30 miles</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2026 Mondframe Ltd</p>
+            <p>Privacy · Terms · Cookies</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
