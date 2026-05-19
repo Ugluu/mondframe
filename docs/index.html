@@ -153,7 +153,25 @@
         </div>
     </div>
 </section>
+
 <script>
+    // Mobile nav toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    
+    navToggle.addEventListener('click', () => {
+        navToggle.classList.toggle('active');
+        navLinks.classList.toggle('active');
+    });
+
+    // Close menu when link clicked
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navToggle.classList.remove('active');
+            navLinks.classList.remove('active');
+        });
+    });
+
     const baSlider = document.querySelector('.ba-slider');
     const baClip = document.querySelector('.ba-before-clip');
     const baHandle = document.querySelector('.ba-handle');
