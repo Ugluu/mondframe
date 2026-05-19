@@ -798,3 +798,131 @@ img {
     font-size: 13px;
     color: var(--muted);
 }
+/* ============================================
+   13. RESPONSIVE — MOBILE
+   ============================================ */
+
+@media (max-width: 768px) {
+
+    /* Container */
+    .container {
+        padding: 0 20px;
+    }
+
+    /* Navigation */
+    .nav-container {
+        padding: 12px 20px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 560px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+        max-width: 100%;
+    }
+
+    .hero-sub {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Trust badges */
+    .trust-badges ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    /* Section titles */
+    .section-title {
+        font-size: 28px;
+        margin-bottom: 32px;
+    }
+
+    .section-sub {
+        font-size: 16px;
+        margin-top: -24px;
+        margin-bottom: 40px;
+        padding: 0 12px;
+    }
+
+    /* Pain point */
+    .comparison {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .card {
+        padding: 32px 24px;
+    }
+
+    .card h3 {
+        font-size: 20px;
+    }
+
+    /* Services */
+    .service-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    /* Work / Before-After */
+    .ba-slider {
+        aspect-ratio: 4 / 3;
+    }
+
+    /* Pricing */
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .price-card-featured {
+        transform: none;
+    }
+
+    /* Process */
+    .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+    }
+
+    /* FAQ */
+    .faq-layout {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+
+    /* Section padding */
+    :root {
+        --section-padding: 64px;
+    }
+}
