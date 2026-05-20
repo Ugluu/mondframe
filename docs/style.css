@@ -953,6 +953,78 @@ img {
 }
 
 /* ============================================
+   15. ABOUT
+   ============================================ */
+
+.about {
+    padding: var(--section-padding) 0;
+    background: var(--primary);
+    color: var(--white);
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.about-eyebrow {
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+
+.about-heading {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.15;
+    max-width: 540px;
+    margin-bottom: 32px;
+}
+
+.about-copy p {
+    font-size: 16px;
+    line-height: 1.75;
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: 20px;
+}
+
+.about-copy p:last-child {
+    margin-bottom: 0;
+}
+
+.about-stats {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-stat {
+    padding: 24px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.about-stat:first-child {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.about-stat-value {
+    display: block;
+    font-size: 34px;
+    font-weight: 700;
+    color: var(--accent);
+    line-height: 1;
+    margin-bottom: 6px;
+}
+
+.about-stat-label {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.55);
+    letter-spacing: 0.5px;
+}
+
+/* ============================================
    13. RESPONSIVE — MOBILE
    ============================================ */
 
@@ -1097,6 +1169,16 @@ img {
     .faq-layout {
         grid-template-columns: 1fr;
         gap: 32px;
+    }
+
+    /* About */
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-heading {
+        font-size: 28px;
     }
 
     /* Contact form */
