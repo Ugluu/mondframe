@@ -883,6 +883,76 @@ img {
 }
 
 /* ============================================
+   14. CONTACT FORM
+   ============================================ */
+
+.contact {
+    padding: var(--section-padding) 0;
+    background: var(--white);
+}
+
+.contact-form {
+    max-width: 720px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+.form-group input,
+.form-group textarea {
+    font-family: var(--font-family);
+    font-size: 15px;
+    color: var(--primary);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 16px;
+    width: 100%;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--muted);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(0, 224, 168, 0.15);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-submit {
+    width: 100%;
+    text-align: center;
+}
+
+/* ============================================
    13. RESPONSIVE — MOBILE
    ============================================ */
 
@@ -1027,6 +1097,11 @@ img {
     .faq-layout {
         grid-template-columns: 1fr;
         gap: 32px;
+    }
+
+    /* Contact form */
+    .form-row {
+        grid-template-columns: 1fr;
     }
 
     /* Footer */
