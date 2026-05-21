@@ -630,7 +630,7 @@ img {
 }
 
 .price-features li.muted::before {
-    content: "✗ ";
+    content: "✓ ";
     color: var(--muted);
 }
 
