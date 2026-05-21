@@ -138,7 +138,7 @@ img {
 }
 
 .nav-links a:hover {
-    color: var(--muted);
+    color: var(--accent);
 }
 .nav-toggle {
     display: none;
