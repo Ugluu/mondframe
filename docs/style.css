@@ -453,6 +453,15 @@ img {
     width: 1200px;
     max-width: none;
 }
+.ba-after-clip {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    overflow: hidden;
+    pointer-events: none;
+}
 
 .ba-handle {
     position: absolute;
