@@ -231,7 +231,7 @@
                     <li class="muted">Cinematic Property Video</li>
                     <li class="muted">Instagram & TikTok Reels</li>
                 </ul>
-                <a href="#contact" class="btn btn-outline">Book Essential</a>
+                <a href="#contact" class="btn btn-outline" data-package="Book Essential (£150)">Book Essential</a>
             </div>
             
             <div class="price-card price-card-featured">
@@ -248,7 +248,7 @@
                     <li class="muted">Cinematic Property Video</li>
                     <li class="muted">Instagram & TikTok Reels</li>
                 </ul>
-                <a href="#contact" class="btn btn-accent">Book Signature</a>
+                <a href="#contact" class="btn btn-accent" data-package="Book Signature (£250)">Book Signature</a>
             </div>
             
             <div class="price-card">
@@ -264,7 +264,7 @@
                     <li>Cinematic Property Video</li>
                     <li>Instagram & TikTok Reels</li>
                 </ul>
-                <a href="#contact" class="btn btn-outline">Book Premium</a>
+                <a href="#contact" class="btn btn-outline" data-package="Book Premium (£450)">Book Premium</a>
             </div>
         </div>
     </div>
@@ -529,6 +529,17 @@
         </div>
     </div>
 </footer>
+
+<script>
+    document.querySelectorAll('[data-package]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            var msg = document.getElementById('message');
+            if (msg) {
+                msg.value = btn.getAttribute('data-package') + '\n';
+            }
+        });
+    });
+</script>
 
 </body>
 </html>
