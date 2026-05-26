@@ -912,18 +912,6 @@ img {
     align-items: center;
 }
 
-/* Left column overrides for section heading/sub */
-.contact-left .section-title {
-    text-align: left;
-    margin-bottom: 8px;
-}
-
-.contact-left .section-sub {
-    text-align: left;
-    margin-top: 0;
-    margin-bottom: 32px;
-}
-
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -1306,10 +1294,6 @@ img {
     /* Contact section */
     .contact-split {
         grid-template-columns: 1fr;
-    }
-
-    .contact-left .section-title {
-        font-size: 28px;
     }
 
     .contact-right {
