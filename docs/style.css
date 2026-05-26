@@ -936,7 +936,7 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 24px;
+    gap: 36px;
     order: -1;
     padding-top: 0;
 }
@@ -953,14 +953,14 @@ img {
     display: inline-block;
     font-size: 22px;
     font-weight: 700;
-    color: var(--accent);
+    color: var(--primary);
     text-decoration: none;
     margin: 0;
-    transition: opacity 0.2s ease;
+    transition: color 0.2s ease;
 }
 
 .contact-cta-email:hover {
-    opacity: 0.75;
+    color: var(--accent);
 }
 
 .contact-cta-sub {
