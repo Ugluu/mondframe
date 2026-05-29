@@ -231,7 +231,7 @@
                     <li class="muted">Cinematic Property Video</li>
                     <li class="muted">Instagram & TikTok Reels</li>
                 </ul>
-                <a href="#contact" class="btn btn-outline" data-package="Book Essential (£150)">Book Essential</a>
+                <button class="btn btn-outline" data-cal-link="mondframe/book-essential" data-cal-namespace="book-essential" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Book Essential</button>
             </div>
             
             <div class="price-card price-card-featured">
@@ -248,8 +248,7 @@
                     <li class="muted">Cinematic Property Video</li>
                     <li class="muted">Instagram & TikTok Reels</li>
                 </ul>
-                <a href="#contact" class="btn btn-accent" data-package="Book Signature (£250)">Book Signature</a>
-            </div>
+                <button class="btn btn-accent" data-cal-link="mondframe/book-signature" data-cal-namespace="book-signature" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Book Signature</button>            </div>
             
             <div class="price-card">
                 <p class="price-tier">Premium</p>
@@ -264,8 +263,7 @@
                     <li>Cinematic Property Video</li>
                     <li>Instagram & TikTok Reels</li>
                 </ul>
-                <a href="#contact" class="btn btn-outline" data-package="Book Premium (£450)">Book Premium</a>
-            </div>
+                <button class="btn btn-outline" data-cal-link="mondframe/book-premium" data-cal-namespace="book-premium" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Book Premium</button>            </div>
         </div>
     </div>
 </section>
@@ -541,6 +539,20 @@
             if (e.persisted) { form.reset(); }
         });
     }());
+</script>
+
+<!-- Cal.com pop-up embed for 3 packages -->
+<script type="text/javascript">
+(function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+
+Cal("init", "book-essential", {origin:"https://app.cal.com"});
+Cal.ns["book-essential"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+
+Cal("init", "book-signature", {origin:"https://app.cal.com"});
+Cal.ns["book-signature"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+
+Cal("init", "book-premium", {origin:"https://app.cal.com"});
+Cal.ns["book-premium"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
 </script>
 
 </body>
