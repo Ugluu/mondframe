@@ -223,39 +223,80 @@
         </span>
     </div>
     <h2 class="section-title">Try it yourself</h2>
-    <p class="section-sub">See how we turn an empty room into a buyer-ready space. Press the button and watch the AI work.</p>
+    <p class="section-sub">Browse our sample rooms, then stage the one in focus. Press the button and watch the AI work.</p>
 
-    <div class="demo-frame">
-        <div class="demo-stage" id="stage">
-            <!-- Replace these two .ph blocks with real <img> when you have sample photos.
-                 Empty room: <img class="demo-img empty" src="images/staging-empty.jpg" alt="Empty room before staging">
-                 Staged room: <img class="demo-img staged" src="images/staging-furnished.jpg" alt="Room after AI virtual staging"> -->
-            <div class="demo-img empty">
-                <div class="ph ph-empty">EMPTY ROOM<small>your uploaded sample</small></div>
+    <div class="demo-carousel">
+        <button class="demo-arrow prev" id="prevBtn" aria-label="Previous room">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <button class="demo-arrow next" id="nextBtn" aria-label="Next room">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+
+        <div class="demo-track-wrap">
+            <div class="demo-track" id="track">
+                <!-- ROOM 1 -->
+                <div class="demo-slide r1">
+                    <div class="demo-stage">
+                        <div class="demo-img empty"><div class="ph ph-empty">EMPTY · Living room<small>sample 1</small></div></div>
+                        <div class="demo-img staged"><div class="ph ph-staged">STAGED · Living room<small>sample 1</small></div></div>
+                        <div class="demo-box b1"></div><div class="demo-box b2"></div><div class="demo-box b3"></div>
+                        <div class="demo-scan"><div class="demo-spinner"></div><div class="demo-scan-text">Analysing the space…</div></div>
+                        <span class="demo-state">Before</span>
+                    </div>
+                </div>
+                <!-- ROOM 2 -->
+                <div class="demo-slide r2">
+                    <div class="demo-stage">
+                        <div class="demo-img empty"><div class="ph ph-empty">EMPTY · Bedroom<small>sample 2</small></div></div>
+                        <div class="demo-img staged"><div class="ph ph-staged">STAGED · Bedroom<small>sample 2</small></div></div>
+                        <div class="demo-box b1"></div><div class="demo-box b2"></div><div class="demo-box b3"></div>
+                        <div class="demo-scan"><div class="demo-spinner"></div><div class="demo-scan-text">Analysing the space…</div></div>
+                        <span class="demo-state">Before</span>
+                    </div>
+                </div>
+                <!-- ROOM 3 -->
+                <div class="demo-slide r3">
+                    <div class="demo-stage">
+                        <div class="demo-img empty"><div class="ph ph-empty">EMPTY · Kitchen<small>sample 3</small></div></div>
+                        <div class="demo-img staged"><div class="ph ph-staged">STAGED · Kitchen<small>sample 3</small></div></div>
+                        <div class="demo-box b1"></div><div class="demo-box b2"></div><div class="demo-box b3"></div>
+                        <div class="demo-scan"><div class="demo-spinner"></div><div class="demo-scan-text">Analysing the space…</div></div>
+                        <span class="demo-state">Before</span>
+                    </div>
+                </div>
+                <!-- ROOM 4 -->
+                <div class="demo-slide r4">
+                    <div class="demo-stage">
+                        <div class="demo-img empty"><div class="ph ph-empty">EMPTY · Dining<small>sample 4</small></div></div>
+                        <div class="demo-img staged"><div class="ph ph-staged">STAGED · Dining<small>sample 4</small></div></div>
+                        <div class="demo-box b1"></div><div class="demo-box b2"></div><div class="demo-box b3"></div>
+                        <div class="demo-scan"><div class="demo-spinner"></div><div class="demo-scan-text">Analysing the space…</div></div>
+                        <span class="demo-state">Before</span>
+                    </div>
+                </div>
+                <!-- ROOM 5 -->
+                <div class="demo-slide r5">
+                    <div class="demo-stage">
+                        <div class="demo-img empty"><div class="ph ph-empty">EMPTY · Studio<small>sample 5</small></div></div>
+                        <div class="demo-img staged"><div class="ph ph-staged">STAGED · Studio<small>sample 5</small></div></div>
+                        <div class="demo-box b1"></div><div class="demo-box b2"></div><div class="demo-box b3"></div>
+                        <div class="demo-scan"><div class="demo-spinner"></div><div class="demo-scan-text">Analysing the space…</div></div>
+                        <span class="demo-state">Before</span>
+                    </div>
+                </div>
             </div>
-            <div class="demo-img staged">
-                <div class="ph ph-staged">STAGED ROOM<small>AI furnished sample</small></div>
-            </div>
-
-            <div class="demo-box b1"></div>
-            <div class="demo-box b2"></div>
-            <div class="demo-box b3"></div>
-
-            <div class="demo-scan">
-                <div class="demo-spinner"></div>
-                <div class="demo-scan-text" id="scanText">Analysing the space…</div>
-            </div>
-
-            <span class="demo-state" id="stateLabel">Before</span>
         </div>
     </div>
+
+    <div class="demo-dots" id="dots"></div>
 
     <div class="demo-controls">
         <button class="btn btn-accent" id="stageBtn">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 7.4H22l-6 4.6 2.3 7.4-6.3-4.6L5.7 21.4 8 14 2 9.4h7.6z"/></svg>
             Stage this room with AI
         </button>
-        <button class="btn btn-outline" id="resetBtn" disabled>
+        <button class="btn btn-reset" id="resetBtn" disabled>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>
             Reset
         </button>
@@ -272,45 +313,82 @@
 </section>
 
 <script>
-(function () {
-    var stage = document.getElementById('stage');
-    var stageBtn = document.getElementById('stageBtn');
-    var resetBtn = document.getElementById('resetBtn');
-    var stateLabel = document.getElementById('stateLabel');
-    var scanText = document.getElementById('scanText');
-    if (!stage) return;
-    var messages = ['Analysing the space…', 'Detecting room layout…', 'Placing furniture…', 'Adding finishing touches…'];
+(function(){
+    var track=document.getElementById('track');
+    var slides=Array.prototype.slice.call(track.children);
+    var prevBtn=document.getElementById('prevBtn');
+    var nextBtn=document.getElementById('nextBtn');
+    var stageBtn=document.getElementById('stageBtn');
+    var resetBtn=document.getElementById('resetBtn');
+    var dotsWrap=document.getElementById('dots');
+    var current=2;
+    var messages=['Analysing the space…','Detecting room layout…','Placing furniture…','Adding finishing touches…'];
 
-    function stageRoom() {
-        if (stage.classList.contains('is-staged')) return;
-        stageBtn.disabled = true;
-        resetBtn.disabled = true;
+    slides.forEach(function(_,i){
+        var d=document.createElement('button');
+        d.className='demo-dot';
+        d.addEventListener('click',function(){goTo(i);});
+        dotsWrap.appendChild(d);
+    });
+    var dots=Array.prototype.slice.call(dotsWrap.children);
+
+    function update(){
+        track.style.transform='translateX('+(-current*100)+'%)';
+        slides.forEach(function(s,i){s.classList.toggle('is-active',i===current);});
+        dots.forEach(function(d,i){d.classList.toggle('is-active',i===current);});
+        prevBtn.disabled=(current===0);
+        nextBtn.disabled=(current===slides.length-1);
+        slides.forEach(function(s){
+            var stage=s.querySelector('.demo-stage');
+            stage.classList.remove('is-staged','is-processing');
+            var lbl=s.querySelector('.demo-state');if(lbl)lbl.textContent='Before';
+        });
+        stageBtn.disabled=false;
+        resetBtn.disabled=true;
+    }
+
+    function goTo(i){current=Math.max(0,Math.min(slides.length-1,i));update();}
+
+    function stageRoom(){
+        var stage=slides[current].querySelector('.demo-stage');
+        var lbl=slides[current].querySelector('.demo-state');
+        var scanText=slides[current].querySelector('.demo-scan-text');
+        if(stage.classList.contains('is-staged'))return;
+        stageBtn.disabled=true;resetBtn.disabled=true;prevBtn.disabled=true;nextBtn.disabled=true;
         stage.classList.add('is-processing');
-        stateLabel.textContent = 'Processing';
-        var i = 0;
-        var msgTimer = setInterval(function () {
-            i = (i + 1) % messages.length;
-            scanText.textContent = messages[i];
-        }, 650);
-        setTimeout(function () {
-            clearInterval(msgTimer);
+        if(lbl)lbl.textContent='Processing';
+        var i=0;
+        var t=setInterval(function(){i=(i+1)%messages.length;if(scanText)scanText.textContent=messages[i];},650);
+        setTimeout(function(){
+            clearInterval(t);
             stage.classList.remove('is-processing');
             stage.classList.add('is-staged');
-            stateLabel.textContent = 'After';
-            resetBtn.disabled = false;
-            scanText.textContent = messages[0];
-        }, 2600);
+            if(lbl)lbl.textContent='After';
+            if(scanText)scanText.textContent=messages[0];
+            resetBtn.disabled=false;
+            prevBtn.disabled=(current===0);nextBtn.disabled=(current===slides.length-1);
+        },2600);
     }
 
-    function reset() {
+    function reset(){
+        var stage=slides[current].querySelector('.demo-stage');
+        var lbl=slides[current].querySelector('.demo-state');
         stage.classList.remove('is-staged');
-        stateLabel.textContent = 'Before';
-        stageBtn.disabled = false;
-        resetBtn.disabled = true;
+        if(lbl)lbl.textContent='Before';
+        stageBtn.disabled=false;resetBtn.disabled=true;
     }
 
-    stageBtn.addEventListener('click', stageRoom);
-    resetBtn.addEventListener('click', reset);
+    prevBtn.addEventListener('click',function(){goTo(current-1);});
+    nextBtn.addEventListener('click',function(){goTo(current+1);});
+    stageBtn.addEventListener('click',stageRoom);
+    resetBtn.addEventListener('click',reset);
+    window.addEventListener('resize',update);
+
+    track.style.transition='none';
+    requestAnimationFrame(function(){
+        update();
+        requestAnimationFrame(function(){track.style.transition='';});
+    });
 })();
 </script>
 
